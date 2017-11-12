@@ -24,12 +24,13 @@ TARGET_OTA_ASSERT_DEVICE := nx551j,NX551J
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
-# CMHW
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/cmhw
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_nx551j_defconfig
+
+# Lineage Hardware
+BOARD_HARDWARE_CLASS += \
+    $(DEVICE_PATH)/lineagehw
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc/78b7000.i2c/i2c-3/3-005d/wakeup_gesture"
