@@ -73,13 +73,6 @@ etc/firmware/miniBoot.bin
 etc/firmware/TBM_D2.bin
 etc/firmware/SCTable.asb
 
-# Camera caf hal (can be replaced by oss)
-lib/hw/camera.msm8953.so
-lib/libmm-qcamera.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libqomx_core.so
-
 # Camera
 bin/mm-qcamera-daemon
 lib/libAlgorithm.so

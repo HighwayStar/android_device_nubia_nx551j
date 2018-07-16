@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.msm8953 \
     libshim_camera \
     libshim_libc \
     libshims_cameraservice \
