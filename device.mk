@@ -66,7 +66,6 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libshim_camera \
     libshim_libc \
-    libshims_cameraservice \
     Snap
 
 # Display
