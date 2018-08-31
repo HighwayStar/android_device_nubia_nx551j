@@ -1,25 +1,25 @@
 # ACDB
-etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-etc/acdbdata/MTP/MTP_General_cal.acdb
-etc/acdbdata/MTP/MTP_Global_cal.acdb
-etc/acdbdata/MTP/MTP_Handset_cal.acdb
-etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/MTP_Headset_cal.acdb
-etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP/MTP_General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+etc/acdbdata/MTP/MTP_Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+etc/acdbdata/MTP/MTP_Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP/MTP_Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+etc/acdbdata/MTP/MTP_Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
 # Amplifier
-etc/firmware/tas2555_uCDSP.bin
+etc/firmware/tas2555_uCDSP.bin:vendor/firmware/tas2555_uCDSP.bin
 
 # Camera configs
-etc/camera/imx258_main_bu64297_chromatix.xml
-etc/camera/imx258_aux_bu64297_chromatix.xml
-etc/camera/s5k3p3_chromatix.xml
-etc/camera/msm8953_camera_nubia551.xml
+etc/camera/imx258_main_bu64297_chromatix.xml:vendor/etc/camera/imx258_main_bu64297_chromatix.xml
+etc/camera/imx258_aux_bu64297_chromatix.xml:vendor/etc/camera/imx258_aux_bu64297_chromatix.xml
+etc/camera/s5k3p3_chromatix.xml:vendor/etc/camera/s5k3p3_chromatix.xml
+etc/camera/msm8953_camera_nubia551.xml:vendor/etc/camera/msm8953_camera_nubia551.xml
 
 # Camera nubia firmware
-etc/firmware/miniBoot.bin
-etc/firmware/TBM_D2.bin
-etc/firmware/SCTable.asb
+etc/firmware/miniBoot.bin:vendor/firmware/miniBoot.bin
+etc/firmware/TBM_D2.bin:vendor/firmware/TBM_D2.bin
+etc/firmware/SCTable.asb:vendor/firmware/SCTable.asb
 
 # Camera sensors
 vendor/lib/libmmcamera_imx258_aux.so
@@ -176,11 +176,11 @@ vendor/lib/libmmcamera_imx258_bu64297_main_eeprom.so
 vendor/lib/libmmcamera_s5k3p3_front_eeprom.so
 
 # Fingerprint
-bin/gx_fpd
-lib64/hw/fingerprint.default.so
-lib64/hw/gxfingerprint.default.so
-lib64/libfp_client.so
-lib64/libfpservice.so
+bin/gx_fpd:vendor/bin/gx_fpd
+lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so
+lib64/hw/gxfingerprint.default.so:vendor/lib64/hw/gxfingerprint.default.so
+lib64/libfp_client.so:vendor/lib64/libfp_client.so
+lib64/libfpservice.so:vendor/lib64/libfpservice.so
 
 # Touchscreen
-etc/firmware/nubia_tp_1302_jdi_fw.img
+etc/firmware/nubia_tp_1302_jdi_fw.img:vendor/firmware/nubia_tp_1302_jdi_fw.img
