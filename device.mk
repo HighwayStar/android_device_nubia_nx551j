@@ -22,33 +22,29 @@ $(call inherit-product-if-exists, vendor/nubia/nx551j/nx551j-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES +=  \
-    $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml
+    $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml \
+    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml
 
 
 # Keylaouts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/goodix-ts.kl:system/usr/keylayout/goodix-ts.kl \
-    $(LOCAL_PATH)/keylayout/gf5216m.kl:system/usr/keylayout/gf5216m.kl \
-    $(LOCAL_PATH)/keylayout/nubia_synaptics_1302.kl:system/usr/keylayout/nubia_synaptics_1302.kl
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/keylayout/goodix-ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix-ts.kl \
+    $(LOCAL_PATH)/keylayout/gf5216m.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gf5216m.kl \
+    $(LOCAL_PATH)/keylayout/nubia_synaptics_1302.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/nubia_synaptics_1302.kl
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
+    $(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
 # Thermal configs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-00-02.conf:/system/etc/.tp/.thermal-mode-00-02.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-01-02.conf:/system/etc/.tp/.thermal-mode-01-02.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-02-02.conf:/system/etc/.tp/.thermal-mode-02-02.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-00-01.conf:/system/etc/.tp/.thermal-mode-00-01.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-01-01.conf:/system/etc/.tp/.thermal-mode-01-01.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-02-01.conf:/system/etc/.tp/.thermal-mode-02-01.conf \
-    $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:/system/etc/thermal-engine.conf
+    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-00-02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-00-02.conf \
+    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-01-02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-01-02.conf \
+    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-02-02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-02-02.conf \
+    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-00-01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-00-01.conf \
+    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-01-01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-01-01.conf \
+    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-02-01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-02-01.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Inherit from msm8953-common
 $(call inherit-product, device/nubia/msm8953-common/msm8953.mk)
