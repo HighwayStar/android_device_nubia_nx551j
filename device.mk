@@ -38,12 +38,6 @@ PRODUCT_COPY_FILES += \
 
 # Thermal configs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-00-02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-00-02.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-01-02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-01-02.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-02-02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-02-02.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-00-01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-00-01.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-01-01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-01-01.conf \
-    $(LOCAL_PATH)/configs/thermal/.tp/.thermal-mode-02-01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal-mode-02-01.conf \
     $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Inherit from msm8953-common
