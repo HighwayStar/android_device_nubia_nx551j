@@ -1,0 +1,7 @@
+# Power supply
+genfscon sysfs   /sys/devices/soc/78b6000.i2c/i2c-2/2-0055/power_supply   u:object_r:sysfs_usb_supply:s0
+genfscon sysfs   /sys/devices/soc/78b6000.i2c/i2c-2/2-001d/power_supply   u:object_r:sysfs_usb_supply:s0
+genfscon sysfs   /sys/devices/soc/soc:qcom,bcl/power_supply                u:object_r:sysfs_battery_supply:s0
+genfscon sysfs   /sys/devices/soc/qpnp-typec-9/power_supply                u:object_r:sysfs_usb_supply:s0
+genfscon sysfs   /sys/devices/soc/msm-bcl-20/power_supply                  u:object_r:sysfs_battery_supply:s0
+genfscon sysfs   /sys/devices/soc/soc:weipu-charger/power_supply           u:object_r:sysfs_usb_supply:s0

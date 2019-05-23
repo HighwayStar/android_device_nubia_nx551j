@@ -1,0 +1,7 @@
+# Health
+/sys/devices/soc/78b6000\.i2c/i2c-2/2-0055/power_supply/bq27520-fg(/.*)? u:object_r:sysfs_usb_supply:s0
+/sys/devices/soc/78b6000\.i2c/i2c-2/2-001d/power_supply/usb-parallel(/.*)? u:object_r:sysfs_usb_supply:s0
+/sys/devices/soc/soc:qcom,bcl/power_supply/bcl(/.*)? u:object_r:sysfs_battery_supply:s0
+/sys/devices/soc/qpnp-typec-9/power_supply/typec(/.*)? u:object_r:sysfs_usb_supply:s0
+/sys/devices/soc/msm-bcl-20/power_supply/fg_adc(/.*)? u:object_r:sysfs_battery_supply:s0
+/sys/devices/soc/soc:weipu-charger/power_supply/wp_chg(/.*)? u:object_r:sysfs_usb_supply:s0
